@@ -8,7 +8,7 @@ function setToX(x) {
         turn = 'O'
         console.log("changed to X");
     }
-    else {
+    else if (y.textContent == x) {
         y.textContent = 'O';
         turn = 'X'
         console.log("Changed to O");
@@ -16,7 +16,14 @@ function setToX(x) {
     playerIcon.textContent = turn;
     if (checkWin() == true) {
         {
-            console.log("Win");
+            if(turn == 'X'){
+                var turn1 = 'O';
+            }
+            else {
+                var turn1 = 'X';
+            }
+            console.log(turn1 + " Win");
+            alert(turn1 + " Won");
             resetBoard();
         }
     }
