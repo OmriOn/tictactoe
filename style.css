@@ -1,3 +1,4 @@
+
 body{
     font-family: Inter;
     text-align: center;
@@ -20,7 +21,11 @@ body{
   
   table{
     margin: 0 auto;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 4px;
+    border-spacing: 0px;
+    border: 1px solid #bb427f;
   }
 
   button{
@@ -48,3 +53,4 @@ body{
     background-color: blue;
     color: white;
   }
+
