@@ -16,7 +16,7 @@ function setToX(x) {
     playerIcon.textContent = turn;
     if (checkWin() == true) {
         {
-            if(turn == 'X'){
+            if (turn == 'X') {
                 var turn1 = 'O';
             }
             else {
