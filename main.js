@@ -27,6 +27,10 @@ function setToX(x) {
             resetBoard();
         }
     }
+    if (checkDraw(1, 2, 3, 4, 5, 6, 7, 8, 9)) {
+        alert("Draw");
+        resetBoard();
+    }
 }
 
 function resetBoard() {
@@ -43,4 +47,17 @@ function check3Same(a, b, c) {
     cellB = document.getElementById(b).textContent
     cellC = document.getElementById(c).textContent
     return cellA == cellB && cellB == cellC
+}
+
+function checkDraw(a, b, c, d, e, f, g, h, i) {
+    cellA = document.getElementById(a).textContent
+    cellB = document.getElementById(b).textContent
+    cellC = document.getElementById(c).textContent
+    cellD = document.getElementById(d).textContent
+    cellE = document.getElementById(e).textContent
+    cellF = document.getElementById(f).textContent
+    cellG = document.getElementById(g).textContent
+    cellH = document.getElementById(h).textContent
+    cellI = document.getElementById(i).textContent
+    return cellA != "1" && cellB != "2" && cellC != "3" && cellD != "4" && cellE != "5" && cellF != "6" && cellG != "7" && cellH != "8" && cellI != "9"
 }
